@@ -1,4 +1,3 @@
-// src/shared/SearchInput/SearchInput.tsx
 import React from "react";
 import styles from "./SearchInput.module.scss";
 import searchIcon from "../../../assets/icons/search-icon.svg";
