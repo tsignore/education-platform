@@ -1,6 +1,6 @@
 .button {
   border: none;
-  font-weight: bold;
+  font-weight: 700;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -24,6 +24,22 @@
   }
 
   // Варианты кнопок
+  &.text {
+    background-color: transparent;
+    color: currentColor;
+    font-weight: 400;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+  &.text.primary {
+    color: var(--primary-color);
+  }
+  &.text.secondary {
+    color: var(--secondary-color);
+  }
+
   &.filled {
     border: none;
     color: white;
@@ -31,8 +47,14 @@
 
   &.outlined {
     background-color: transparent;
-    border: 2px solid currentColor;
+    border: 1px solid currentColor;
     color: currentColor;
+  }
+  &.outlined.primary {
+    color: var(--primary-color);
+  }
+  &.outlined.secondary {
+    color: var(--primary-secondary);
   }
 
   &.round {
@@ -66,12 +88,12 @@
 
   &.medium {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   &.large {
     padding: 15px 30px;
-    font-size: 20px;
+    font-size: 18px;
 
     .icon {
       font-size: 22px;

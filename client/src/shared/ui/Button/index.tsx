@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Button.module.scss";
 
 interface ButtonProps {
-  variant?: "filled" | "outlined" | "round";
+  variant?: "filled" | "outlined" | "round" | "text";
   color?: "primary" | "secondary" | "black";
   size?: "small" | "medium" | "large";
   children: React.ReactNode;
