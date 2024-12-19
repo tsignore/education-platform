@@ -1,0 +1,25 @@
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.label {
+  font-size: 14px;
+  color: var(--black-color);
+  margin-bottom: 8px;
+}
+
+.input {
+  padding: 18px;
+  font-size: 14px;
+  border: 1px solid currentColor;
+  color: currentColor;
+  outline: none;
+  transition: border-color 0.3s;
+
+  &::placeholder {
+    color: currentColor;
+    font-weight: bold;
+  }
+}
