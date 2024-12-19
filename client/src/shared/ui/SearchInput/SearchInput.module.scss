@@ -1,0 +1,27 @@
+.searchInputWrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.iconWrapper {
+  position: absolute;
+  left: 14px; /* Позиционирование иконки */
+  z-index: 1;
+  display: flex;
+}
+
+.searchInput {
+  padding: 14px;
+  padding-left: 50px; /* Учтите место для иконки */
+  width: 100%;
+  font-size: 14px;
+  border: 1px solid var(--black-color);
+  border-radius: 50px;
+  outline: none;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
