@@ -1,0 +1,36 @@
+.footer {
+  background-color: #101112;
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.left {
+  font-size: 14px;
+}
+
+.right ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.right a {
+  color: white;
+  text-decoration: none;
+}
+
+.right a:hover {
+  text-decoration: underline;
+}
