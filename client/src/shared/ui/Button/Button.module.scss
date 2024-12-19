@@ -1,0 +1,108 @@
+.button {
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+
+  // Цвета
+  &.primary {
+    background-color: var(--primary-color);
+    color: white;
+  }
+
+  &.secondary {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+
+  &.black {
+    background-color: var(--black-color);
+    color: white;
+  }
+
+  // Варианты кнопок
+  &.filled {
+    border: none;
+    color: white;
+  }
+
+  &.outlined {
+    background-color: transparent;
+    border: 2px solid currentColor;
+    color: currentColor;
+  }
+
+  &.round {
+    border-radius: 50%;
+    padding: 15px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  // Размеры кнопок
+  &.small {
+    padding: 5px 10px;
+    font-size: 12px;
+
+    .icon {
+      font-size: 14px;
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  &.round.small {
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+  }
+
+  &.medium {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  &.large {
+    padding: 15px 30px;
+    font-size: 20px;
+
+    .icon {
+      font-size: 22px;
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  &.round.large {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+  }
+
+  // Кнопка с иконками
+  &.iconButton {
+    gap: 8px;
+  }
+
+  .icon {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &.outlined:hover {
+    background-color: #64839e36;
+  }
+}
